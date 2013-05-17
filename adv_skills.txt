@@ -36,7 +36,7 @@
 
 * A: It's missing the name attribute.
 * B: The placeholder attribute is experimental and shouldn't be used.
-* C: In HTML5, the input should be self-closing instead of using `</input>`
+-> * C: In HTML5, the input should be self-closing instead of using `</input>`
 * D: It's using the wrong type attribute, for names it should be textarea.
 
 ***
@@ -81,7 +81,7 @@
 
 9. Q: Why do we keep CSS and HTML separate?
 
-A: 
+A: Separating the concerns keeps content and structure in their own realms. It allows for the reuse of CSS files which cuts down on the amount of repeated code immensely. Instead of adding styling to each individual HTML element, you can use classes and IDs to style many different elements at once. It also improves the readability of both.
 
 
 
@@ -108,9 +108,9 @@ Demonstrate the following steps by creating a repo and committing your work:
 12. Inside the form create a submit button with the word "Activate!" on the button
 13. Add a footer tag which includes the text "&copy; 2013"
 
-Username:
+Username: badascii
 
-Repo name:
+Repo name: html_test
 
 ***
 
@@ -217,9 +217,9 @@ Demonstrate the following steps by creating a repo and committing your work:
 9. Create four divs with the class "squad", make them 100x100, give them a background color of white.
 10. Give each div 20px of margin, and arrange them into a square (2x2).
 
-Username:
+Username: badascii
 
-Repo name:
+Repo name: css_test
 
 ***
 
@@ -276,7 +276,7 @@ Repo name:
 
 22. Q: What does it mean to delay Javascript until the document is ready?
 
-A: Document ready waits until the entire DOM is loaded in the browser before it fires off its JavaScript. Without it, the Javascript would run as soon as the browser reaches the line it is on regardless if it is dependent on parts of the DOM that are loaded after.
+A: Document ready waits until the entire DOM is loaded in the browser before it fires off the JavaScript contained within. Without it, the Javascript would run immediately when the browser comes across it regardless if it is dependent on parts of the DOM that haven't yet loaded.
 
 
 
@@ -297,9 +297,9 @@ Demonstrate the following steps by creating a repo and committing your work:
 6. In the head.js, use jQuery to find the "steve" div and add the class "squiggly"
 7. In the foot.js, use jQuery to add a click handler to the button that shows or hides the div with class "squiggly"
 
-Username:
+Username: badascii
 
-Repo name:
+Repo name: js_test
 
 ***
 
@@ -434,8 +434,7 @@ An early return is used at the beginning like such: return something if conditio
 
 36. Q: What is the difference between a class method and an instance method?
 
-A: Class methods are called directly on the actual class that the method is defined in. Instance methods are available to instances of the method's class.
-
+A: Class methods are called directly on the actual class that the method is defined in. Instance methods are available to any instance of that particular class.
 
 
 
@@ -456,9 +455,9 @@ Demonstrate the following steps by creating a repo and committing your work:
 7. Inside bazinga, also have it puts the value of the instance variable called "pound".
 8. Outside the function declaration, call the function bazinga.
 
-Username:
+Username: badascii
 
-Repo name:
+Repo name: ruby_test
 
 ***
 
@@ -469,7 +468,7 @@ Repo name:
 37. Q: When we push files to Github and it throws an error saying it can't 'fast-forward', what do we do?
 
 * A: `git fetch origin`
-* B: `git pull origin master`
+-> * B: `git pull origin master`
 * C: `git fast-forward master`
 * D: `git push -f origin master`
 
@@ -477,7 +476,7 @@ Repo name:
 
 38. Q: When we have untracked files in our working directory, how do we prepare them for committing?
 
-* A: `git add .`
+-> * A: `git add .`
 * B: `git stage .`
 * C: `git commit --force-add -m ""`
 * D: `git init -m`
@@ -497,7 +496,7 @@ Repo name:
 
 40. Q: What are the three commands we use to save code changes and send them to Github?
 
-A: 
+A: git add, git commit, git push
 
 
 
@@ -508,7 +507,9 @@ A:
 
 41. Q: Why do we use Git over some other method of sharing code?
 
-A: 
+A: It allows us to track every historical change to the codebase and revert any unwanted changes very easily. Team projects are much more manageable than older methods of sharing code such as local FTP, as you can work on a branch and know your work is not being dubplicated elsewhere on the team. Forking someone else's project without having to get permission allows for great experimentation options. GitHub is also an amazing resource with an easy-to-use GUI.
+
+The groundswell effect has certainly helped it to rise to prominence over Mercurial, Subversion, and others. Because so many people are using Git it makes sense for othes to jump onboard. When working with a team all members must be using the same version control, so there is a cascading effect with its userbase. The backing of Linus Torvald certainly didn't hurt.
 
 
 
